@@ -1,71 +1,51 @@
-import './_feature.scss'
+import "./_feature.module.scss";
+import Card from "../../components/Card.jsx";
 
-export function Features(){
-    return ( 
-        <>
-         <div className="pt-4">
-            <div className="container px-lg-5">
-                <div className="row gx-lg-5">
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <div className="card bg-light border-0 h-100">
-                            <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i className="bi bi-collection"></i></div>
-                                <h2 className="fs-4 fw-bold">Fresh new layout</h2>
-                                <p className="mb-0">With Bootstrap 5, we have created a fresh new layout for this template!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <div className="card bg-light border-0 h-100">
-                            <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i className="bi bi-cloud-download"></i></div>
-                                <h2 className="fs-4 fw-bold">Free to download</h2>
-                                <p className="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <div className="card bg-light border-0 h-100">
-                            <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i className="bi bi-card-heading"></i></div>
-                                <h2 className="fs-4 fw-bold">Jumbotron hero header</h2>
-                                <p className="mb-0">The heroic part of this template is the jumbotron hero header!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <div className="card bg-light border-0 h-100">
-                            <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i className="bi bi-bootstrap"></i></div>
-                                <h2 className="fs-4 fw-bold">Feature boxes</h2>
-                                <p className="mb-0">We have created some custom feature boxes using Bootstrap icons!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <div className="card bg-light border-0 h-100">
-                            <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i className="bi bi-code"></i></div>
-                                <h2 className="fs-4 fw-bold">Simple clean code</h2>
-                                <p className="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <div className="card bg-light border-0 h-100">
-                            <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i className="bi bi-patch-check"></i></div>
-                                <h2 className="fs-4 fw-bold">A name you trust</h2>
-                                <p className="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+export function Features() {
+  return (
+    <section className="pt-4">
+      <div className="container px-lg-5">
+        <div className="row gx-lg-5">
+          <Card
+            title={"Hedef Belirleme"}
+            text={
+              "Net, ölçülebilir ve kişisel hedefler koymak, ilerlemenizi takip etmenize ve odaklanmanıza yardımcı olur. Hedeflerinizi belirlerken gerçekçi olun ve onları adım adım gerçekleştirmek için plan yapın."
+            }
+          />
+          <Card
+            title={"İçsel Motivasyonu Keşfetme"}
+            text={
+              " Kendi değerlerinizi, tutkularınızı ve ilgi alanlarınızı tanımak, işleri yaparken daha fazla motive olmanıza yardımcı olabilir. İçsel motivasyon, uzun vadede sizi destekleyen bir kaynak olabilir."
+            }
+          />
+          <Card
+            title={"Olumlu Düşünce ve Zihinsel Güç"}
+            text={
+              "Olumlu düşünce tarzını benimsemek, zorluklarla başa çıkmanın ve engelleri aşmanın önemli bir yoludur. Pozitif bir zihinsel duruş, motivasyonunuzu korumanıza yardımcı olabilir."
+            }
+          />
+          <Card
+            title={"Disiplin ve Süreklilik"}
+            text={
+              "Başlangıçta belirlenen hedeflere ulaşmak için düzenli bir çaba ve disiplinli bir tutum gereklidir. Sürekli bir şekilde çalışmak ve azim göstermek, zamanla büyük başarılar elde etmenizi sağlar."
+            }
+          />
+          <Card
+            title={"Mola ve Dinlenme"}
+            text={
+              "Motivasyonunuzu sürdürmek için zaman zaman dinlenmeye ve kendinize bakmaya ihtiyacınız vardır. Zihinsel ve fiziksel sağlığınızı korumak için düzenli aralar verin."
+            }
+          />
+          <Card
+            title={"Destek ve İletişim"}
+            text={
+              "Başkalarıyla iletişim kurmak, destek almak ve paylaşmak da motivasyonunuzu artırabilir. İnsan ilişkileri ve paylaşım, sizi motive eden bir destek ağı oluşturmanıza yardımcı olabilir."
+            }
+          />
         </div>
-        <div/>
-        </>
-    )
+      </div>
+    </section>
+  );
 }
 
 export default Features;
