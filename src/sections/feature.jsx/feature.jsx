@@ -11,6 +11,7 @@ export function Features() {
             text={
               "Net, ölçülebilir ve kişisel hedefler koymak, ilerlemenizi takip etmenize ve odaklanmanıza yardımcı olur. Hedeflerinizi belirlerken gerçekçi olun ve onları adım adım gerçekleştirmek için plan yapın."
             }
+            icon={"circle"}
           />
           <Card
             title={"İçsel Motivasyonu Keşfetme"}
